@@ -35,17 +35,13 @@ export class UpdateEmployeeComponent implements OnInit {
   OnSubmit(){
     this.empService.updateEmployee(this.id, this.employee).subscribe( res =>{
       console.log(res);
+      this.goToEmployeeList();
     },error => console.log(error));
-<<<<<<< HEAD
+  }
+   goToEmployeeList(){
     this.empService.getEmployeeList().subscribe(res =>{
       console.log(res);
       this.router.navigate(['employees']);
-=======
-    this.empService.getEmployeeList().subscribe( res => {
-      console.log(res);
-      this.router.navigate(['/employees']);
->>>>>>> f62944dabf04ff49d17de371884e1796dce86723
     });
-  }
-  
+   } 
 }
