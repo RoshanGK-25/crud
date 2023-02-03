@@ -1,0 +1,42 @@
+<section class="" id="create-emp">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto bg-light rounded">
+                <form class="p-3" [formGroup] ="addEmployeeForm">
+                    <div class="row pb-2">
+                        <div class="col">
+                            <h2>Create Employee</h2>
+                        </div>
+                    </div>
+                    <div class="row pb-2">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" formControlName = "firstname">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" formControlName = "lastname">
+                        </div>
+                    </div>
+                    <div class="row pb-2">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName = "email">
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" formControlName = "phone">
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Designation</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName = "Designation">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,42 @@
+<section class="" id="create-emp">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto bg-light rounded">
+                <form class="p-3"(ngSubmit)="OnSubmit()">
+                    <div class="row pb-2">
+                        <div class="col">
+                            <h2>Update Employee</h2>
+                        </div>
+                    </div>
+                    <div class="row pb-2">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" [(ngModel)] = employee.firstname>
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" [(ngModel)] = employee.lastname>
+                        </div>
+                    </div>
+                    <div class="row pb-2">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)] = employee.email>
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" [(ngModel)] = employee.phone>
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Designation</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)] = employee.Designation>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</section>
